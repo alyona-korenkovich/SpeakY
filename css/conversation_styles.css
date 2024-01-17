@@ -1,0 +1,20 @@
+.contents, .contents_block {
+  display: flex;
+  flex-direction: column;
+}
+
+.contents {
+  gap: 50px;
+}
+
+.contents_block {
+  gap: 30px;
+}
+
+section h2 {
+  padding-bottom: 0;
+}
+
+.content_wrapper {
+  gap: 100px;
+}

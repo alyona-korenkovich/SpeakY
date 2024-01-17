@@ -1,0 +1,37 @@
+.authors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.author {
+  width: 230px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+img {
+  width: 134px;
+  height: 134px;
+  border-radius: 50%;
+}
+
+figcaption h3, figcaption p {
+  text-align: center;
+}

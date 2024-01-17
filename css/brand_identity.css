@@ -1,0 +1,28 @@
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contents h1 {
+  padding-bottom: 0;
+}
+
+.contents_block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.two_columns {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  height: min-content;
+}
+
+.extra_space {
+  padding-bottom: 20px;
+}

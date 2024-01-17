@@ -1,0 +1,85 @@
+nav {
+  height: fit-content;
+  width: 320px;
+  padding: 30px 15px 85px 30px;
+  box-shadow: 0 5px 17px 0 rgba(12, 12, 12, 0.15);
+  background-color: var(--secondary-color);
+}
+
+nav h1 {
+  color: var(--accent-color);
+}
+
+nav > ul > li {
+  position: relative;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--break-color);
+}
+
+nav > ul > li:last-child {
+  border: none;
+}
+
+.menu_option li {
+  padding: 8px 4px 8px 28px;
+}
+
+.menu_option a {
+  display: block;
+}
+
+.menu_option > a {
+  padding-bottom: 12px;
+}
+
+.menu_option > a::after {
+  content: url(../img/arrow.png);
+  position: absolute;
+  right: 0;
+}
+
+.selected_menu_option {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+}
+
+.selected_menu_option > a {
+  color: white;
+}
+
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+button img {
+  width: auto;
+  height: auto;
+  border-radius: 0;
+}
+
+.dropdown_closed {
+  transform: rotateX(180deg);
+}
+
+.dropdown_head {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--text-color);
+}
