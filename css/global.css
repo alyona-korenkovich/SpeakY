@@ -33,6 +33,7 @@ body {
 main {
   height: max-content;
   padding: 50px;
+  margin-left: 320px;
   max-width: var(--max-width);
 }
 

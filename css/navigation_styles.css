@@ -1,5 +1,8 @@
 nav {
-  height: fit-content;
+  position: fixed;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: scroll;
   width: 320px;
   padding: 30px 15px 85px 30px;
   box-shadow: 0 5px 17px 0 rgba(12, 12, 12, 0.15);
@@ -43,7 +46,7 @@ nav > ul > li:last-child {
   border-radius: 5px;
 }
 
-.selected_menu_option > a {
+.selected_menu_option > a, .selected > a {
   color: white;
 }
 
@@ -82,4 +85,16 @@ a {
   text-decoration: none;
   font-weight: 400;
   color: var(--text-color);
+}
+
+.selected::after {
+  z-index: -1;
+  left: -30px;
+  position: absolute;
+  content: '';
+  display: block;
+  width: 320px;
+  height: 40px;
+  top: 6px;
+  background-color: var(--accent-color);
 }

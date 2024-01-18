@@ -29,10 +29,15 @@ function navHighlighter() {
     const sectionTop = (current.getBoundingClientRect().top + window.scrollY) - 50;
     const sectionId = current.getAttribute("id");
 
-    if (
+    console.log(window.scrollY + 1, document.body.scrollHeight - window.innerHeight);
+
+    if (window.scrollY + 1 > document.body.scrollHeight - window.innerHeight) {
+      document.querySelector("nav a[href*=checkbox]").parentElement.classList.add("selected_menu_option");
+      document.querySelector("nav a[href*=hashtag]").parentElement.classList.remove("selected_menu_option");
+    } else if (
       scrollY > sectionTop &&
       scrollY <= sectionTop + sectionHeight
-    ){
+    ) {
       document.querySelector("nav a[href*=" + sectionId + "]").parentElement.classList.add("selected_menu_option");
     } else {
       document.querySelector("nav a[href*=" + sectionId + "]").parentElement.classList.remove("selected_menu_option");
